@@ -1,0 +1,49 @@
+<section class="portfolio py-2">
+    <div class="head text-center  py-3">
+        <h1 class="text-uppercase">portfolio component</h1>
+        <div class="line-with-star">
+            <div class="line"></div>
+            <span class="star">&starf;</span>
+            <div class="line"></div>
+        </div>
+    </div>
+         <div class="container mb-5">
+        <div class="row g-5 position-relative">
+            <div class="col-md-4" *ngFor="let image of images" (click)="open(image.src)">
+                <div class="img-container w-100 rounded rounded-2"  #imageElement>
+                    <img [src]="image.src" class="rounded rounded-2 img" [alt]="image.alt">
+                    <div class="layer position-absolute top-0 start-0 end-0 bottom-0">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+@if (isClicked == true) {
+    <div  class="custom-modal ">
+        <div class="custom-modal-content" >
+            <i class="fa-regular fa-circle-xmark close-button" (click)="close()"></i>
+            <img [src]="imgSrc" alt="Full Image" class="img-fluid">
+        </div>
+    </div> 
+}
+    <!-- <div class="container mb-5">
+        <div class="row g-5 position-relative">
+            <div class="col-md-4" *ngFor="let image of images">
+                <div class="img-container w-100 rounded rounded-2" (click)="openModal(image.src)" #imageElement>
+                    <img [src]="image.src" class="rounded rounded-2 img" [alt]="image.alt">
+                    <div class="layer position-absolute top-0 start-0 end-0 bottom-0">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="isModalOpen" class="custom-modal" (click)="closeModal()">
+        <div class="custom-modal-content" (click)="$event.stopPropagation()">
+            <i class="fa-regular fa-circle-xmark close-button" (click)="closeModal()"></i>
+            <img [src]="selectedImage" alt="Full Image" class="img-fluid">
+        </div>
+    </div> -->
+</section>

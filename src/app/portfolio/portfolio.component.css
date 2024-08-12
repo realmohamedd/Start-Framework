@@ -1,0 +1,101 @@
+.head{
+    margin-top: 100px;
+}
+.head h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.line-with-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 80px;
+    height: 4px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+.star {
+    color: #000;
+    font-size: 24px;
+}
+
+.head p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.container {
+    margin-top: 20px;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.layer {
+    background-color: rgba(26, 188, 156,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    cursor: pointer;
+}
+
+.img-container:hover .layer {
+    opacity: 1;
+}
+
+.layer i {
+    font-size: 100px;
+    color: #fff; 
+}
+.custom-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 255,.2);
+    z-index: 9999;
+}
+
+.custom-modal-content {
+    position: relative;
+    max-width: 100vh;
+    max-height: 100vh;
+}
+.custom-modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+

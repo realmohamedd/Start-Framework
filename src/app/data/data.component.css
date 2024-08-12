@@ -1,0 +1,25 @@
+.data{
+    background-color: #2c3E50;
+}
+.icons {
+    gap: 10px; 
+  }
+  
+  .bord {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color .5s;
+  }
+  
+  .bord i {
+    color: white;
+    font-size: 20px;
+  }
+  .data .icons .bord:hover{
+    background-color: #1ABC9c;
+  }
